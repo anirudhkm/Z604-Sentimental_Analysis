@@ -70,7 +70,7 @@ def classify_tweets_two(cleaned_tweet_str, pos_key_list, neg_key_list,
     inorder for classification
     """
     
-    if not cleaned_tweet_str:
+    if not cleaned_tweet_str.strip():
         return 0
     points_int = 0
     # initial points
